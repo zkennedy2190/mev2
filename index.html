@@ -1,89 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Zach Kennedy - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zach Kennedy – Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="top">
-    <header class="header-container">
-        <div class="header-content">
-            <div class="header-text">
-                <h1>Zach Kennedy</h1>
-                <p>Email: <a href="mailto:zachariahckennedy@lewisu.edu">zachariahckennedy@lewisu.edu</a></p>
-                <p>Discord: <em>zkennedy215656</em></p>
+
+    <!-- Header -->
+    <header class="container pt-5 pb-3 header-container">
+        <div class="row align-items-center header-content">
+            <div class="col-md-8 header-text">
+                <h1 class="mb-2">Zach Kennedy</h1>
+                <p class="mb-1">
+                    Email:
+                    <a href="mailto:zachariahckennedy@lewisu.edu">zachariahckennedy@lewisu.edu</a>
+                </p>
+                <p class="mb-0">Discord: <em>zkennedy215656</em></p>
             </div>
-            <div class="header-image">
-                <img src="me.png" alt="Zach Kennedy Photo">
+            <div class="col-md-4 text-center header-image mt-4 mt-md-0">
+                <img src="me.png" alt="Zach Kennedy Photo" class="img-fluid rounded-circle shadow">
             </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#course-goals">Course Goals</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#fun-fact">Fun Fact</a></li>
-        </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid px-0">
+            <a class="navbar-brand ps-3" href="#top">
+                <i class="bi bi-person-circle"></i> Zach Kennedy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#course-goals">Course Goals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fun-fact">Fun Fact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main class="main-container">
-        <section id="introduction" class="content-section">
-            <h2>Introduction</h2>
+    <div style="height: 40px;"></div> <!-- spacer for fixed navbar -->
+
+    <!-- Main Content -->
+    <main class="container py-5 main-container">
+
+        <!-- Introduction -->
+        <section id="introduction" class="mb-5 content-section">
+            <h2 class="mb-3">Introduction</h2>
             <p>
-                My name is Zach Kennedy and I'm a senior at Lewis, in my last semester. I am working on completing my degree in computer science and have applied for the cybersecurity masters program here at Lewis with hopes on beginning in the fall after completing my bachelors. I currently work in IT for the State of Illinois. 
+                My name is Zach Kennedy and I'm a senior at Lewis, in my last semester. I am working
+                on completing my degree in computer science and have applied for the cybersecurity
+                masters program here at Lewis with hopes of beginning in the fall after completing
+                my bachelor's. I currently work in IT for the State of Illinois.
             </p>
         </section>
-        <section id="course-goals" class="content-section">
-            <h2>Course Goals</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Course Goal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Get more comfortable and accustomed to web programming</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Improve coding knowledge and efficiency</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Add new skills to toolset</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Complete content to add to personal portfolio</td>
-                    </tr>
-                </tbody>
-            </table>
+
+        <!-- Course Goals -->
+        <section id="course-goals" class="mb-5 content-section">
+            <h2 class="mb-3">Course Goals</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Course Goal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Get more comfortable and accustomed to web programming</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Improve coding knowledge and efficiency</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Add new skills to toolset</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Complete content to add to personal portfolio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
-        <section id="hobbies" class="content-section">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>
-                    <a href="https://www.xbox.com/en-US/xbox-game-pass" target="blank" rel="noopener">
+
+        <!-- Hobbies -->
+        <section id="hobbies" class="mb-5 content-section">
+            <h2 class="mb-3">Hobbies</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="https://www.xbox.com/en-US/xbox-game-pass" target="_blank" rel="noopener">
                         Playing video games
                     </a>
                 </li>
-                <li>
+                <li class="list-group-item">
                     <a href="https://tv.youtube.com/" target="_blank" rel="noopener">
                         Watching movies &amp; TV shows
                     </a>
                 </li>
             </ul>
         </section>
+
+        <!-- Fun Fact -->
         <section id="fun-fact" class="content-section">
-            <h2>Fun Fact</h2>
-            <p>My wife and I had our first child in July of last year.</p>
+            <div class="card bg-light text-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Fun Fact</h5>
+                    <p class="card-text">My wife and I had our first child in July of last year.</p>
+                </div>
+            </div>
         </section>
+
     </main>
-    <footer>
-        <p>&copy; 2025 Zach Kennedy</p>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-light py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Zach Kennedy</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,59 @@
+/* Reset and Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #464545;
+  line-height: 1.6;
+}
+
+/* Header Overrides */
+.header-container {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.header-text a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+.header-text a:hover,
+.header-text a:focus {
+  text-decoration: underline;
+}
+.header-image img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Override */
+footer {
+  font-size: 0.9rem;
+}
+
+/* force all navbar-dark links to be white */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #ddd !important;
+}
+
+/* add gap to header-container under navbar */
+.header-container {
+  margin-top: 1.5rem;  /* same as mt-4 */
+}
